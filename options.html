@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Options</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>What Would You Like to Do?</h1>
+        <p>Choose an option to get started on your e-waste recycling journey.</p>
+    </header>
+
+    <!-- Options Section -->
+    <main class="options-container">
+        <section class="option-card">
+            <div class="icon">
+                <i class="fas fa-recycle"></i>
+            </div>
+            <h2>Prepare Your Device for Recycling</h2>
+            <p>
+                Find out how to properly prepare your device for recycling. 
+            </p>
+            <a href="recycling-details.html" class="button">Learn More</a>
+        </section>
+        
+        <section class="option-card">
+            <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h2>Locate a Recycling Center</h2>
+            <p>
+                Find the nearest recycling center using the map below.
+            </p>
+            <div id="map" style="height: 300px; width: 100%; border-radius: 10px; margin-top: 20px;"></div>
+        </section>
+
+        <section class="option-card">
+            <div class="icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h2>Fix Your Device</h2>
+            <p>
+                Learn how to repair your device instead of throwing it away. Help reduce e-waste!
+            </p>
+            <a href="fix-device.html" class="button">Learn More</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 E-Waste Recycling. All rights reserved.</p>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

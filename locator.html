@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find E-Waste Recycling Centers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">E-Waste Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="locator.html">Find Centers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html">Sell/Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Learn More</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Recycling Locator Section -->
+    <div class="container my-5">
+        <h2 class="text-center">Find an E-Waste Recycling Center</h2>
+        
+        <!-- Search Bar -->
+        <div class="mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search by city..." onkeyup="searchCenters()">
+        </div>
+
+        <!-- Recycling Centers Table -->
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Center Name</th>
+                    <th>Location</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody id="centersList">
+                <tr>
+                    <td>GreenTech Recycling</td>
+                    <td>New York, USA</td>
+                    <td>+1 234 567 890</td>
+                </tr>
+                <tr>
+                    <td>EcoBin Recyclers</td>
+                    <td>Los Angeles, USA</td>
+                    <td>+1 987 654 321</td>
+                </tr>
+                <tr>
+                    <td>Recycle Hub</td>
+                    <td>London, UK</td>
+                    <td>+44 123 456 789</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Suggest a New Recycling Center Form -->
+        <h3 class="mt-5">Suggest a New Recycling Center</h3>
+        <form id="suggestForm">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="centerName" placeholder="Center Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="centerLocation" placeholder="Location (City, Country)" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="centerContact" placeholder="Contact (Phone or Email)" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 E-Waste Management | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Recycling</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to E-Waste Recycling</h1>
+            <p>Join us in making the planet greener by recycling your electronic waste responsibly.</p>
+            <a href="options.html" class="button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Information Sections -->
+    <main>
+        <section class="info-section">
+            <div class="icon">
+                <i class="fas fa-trash"></i>
+            </div>
+            <h2>What is E-Waste?</h2>
+            <p>
+                E-waste refers to discarded electronic devices like phones, laptops, and TVs. 
+                These devices contain harmful chemicals that can pollute the environment if not disposed of properly.
+            </p>
+        </section>
+
+        <section class="info-section">
+            <div class="icon">
+                <i class="fas fa-recycle"></i>
+            </div>
+            <h2>Why Recycle E-Waste?</h2>
+            <p>
+                Recycling e-waste helps recover valuable materials like gold, silver, and copper. 
+                It also reduces pollution and protects our planet.
+            </p>
+        </section>
+        
+        <section class="info-section">
+            <div class="icon">
+                <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h2>How Can You Help?</h2>
+            <p>
+                Start by recycling your old electronics. Click the button below to get started!
+            </p>
+            <a href="options.html" class="button">Get Started</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <footer>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <p>© 2023 E-Waste Recycling. All rights reserved.</p>
+            <div class="feedback-section">
+                <h3><i class="fas fa-comment-alt"></i> We Value Your Feedback</h3>
+                <form id="feedbackForm">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-edit"></i>
+                        <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
+                    </div>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+                </form>
+            </div>
+        </footer>
+        
+        <style>
+            .feedback-section {
+                margin-top: 10px;
+                padding: 15px;
+                background-color: #444;
+                border-radius: 8px;
+                text-align: center;
+                max-width: 400px;
+                margin: 10px auto;
+            }
+            .feedback-section h3 {
+                font-size: 18px;
+                margin-bottom: 15px;
+                color: #28a745;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+            .feedback-section h3 i {
+                font-size: 20px;
+            }
+            .feedback-section .input-group {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+                background-color: #555;
+                padding: 8px;
+                border-radius: 5px;
+            }
+            .feedback-section .input-group i {
+                font-size: 16px;
+                color: #28a745;
+            }
+            .feedback-section input,
+            .feedback-section textarea {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 14px;
+                background-color: #fff;
+                color: #333;
+            }
+            .feedback-section textarea {
+                resize: vertical;
+                height: 80px;
+            }
+            .feedback-section button {
+                padding: 10px 20px;
+                background-color: #28a745;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                transition: background-color 0.3s;
+            }
+            .feedback-section button:hover {
+                background-color: #218838;
+            }
+        </style>
+        
+        <script>
+            document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting
+        
+                // Get form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+        
+                // Simulate sending feedback (you can replace this with an API call)
+                console.log('Feedback Submitted:');
+                console.log('Name:', name);
+                console.log('Email:', email);
+                console.log('Message:', message);
+        
+                // Show a confirmation message
+                alert('Thank you for your feedback!');
+        
+                // Clear the form
+                document.getElementById('feedbackForm').reset();
+            });
+        </script>
+    </footer>
+</body>
+</html>
+
+
+    
+
+    
