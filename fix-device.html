@@ -20,7 +20,7 @@
         <!-- Section 1: Why Fix Your Device? -->
         <section class="content-section">
             <div class="image-container">
-                <img src="hehe.webp"alt="Fix Your Device">
+                <img src="https://via.placeholder.com/600x400" alt="Fix Your Device">
             </div>
             <div class="text-container">
                 <h2>Why Fix Your Device?</h2>
@@ -52,33 +52,24 @@
                 </ol>
             </div>
             <div class="image-container">
-                <img src="haha.webp" alt="Repair Tools">
+                <img src="https://via.placeholder.com/600x400" alt="Repair Tools">
             </div>
         </section>
 
-        <!-- Section 3: AI Assistant -->
-        <section class="ai-assistant">
-            <h2>Need Help? Use Our AI Assistant!</h2>
-            <p>
-                Our AI assistant can guide you through the repair process. Simply describe your issue, and it will provide step-by-step instructions.
-            </p>
-            <div class="chatbox">
-                <div class="chatbox-header">
-                    <i class="fas fa-robot"></i>
-                    <h3>E-Waste Repair Assistant</h3>
-                </div>
-                <div class="chatbox-body">
-                    <p>Hi! I’m here to help you fix your device. What’s the issue?</p>
-                    <input type="text" placeholder="Describe your issue...">
-                    <button>Send</button>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 E-Waste Recycling. All rights reserved.</p>
     </footer>
+    <!--dialogflow messenger -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="E-WasteRepairAssistant"
+  agent-id="2ff7bb10-2c3f-41c2-899e-f7c5cef450f6"
+  language-code="en"
+></df-messenger>
+<script src="chatbot.js"></script>
 </body>
 </html>
